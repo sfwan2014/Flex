@@ -28,6 +28,8 @@ Webkit内核
     
     
 flex-direction:
+
+
     .row 横向显示多个 从左到右
     .row-reverse 反转
     .column 纵向显示 从上到下
@@ -35,19 +37,23 @@ flex-direction:
     
 
 flex-wrap: 
+
+
     .nowrap  不换行(默认)
     .wrap 换行, 第一行在上方
     .wrap-reverse 换行,第一行在下方
 
 
 flex-flow:
+
     .row nowrap   横向排列不换行(默认)
     .row wrap   横向排列换行
     .row-reverse nowrap  反转横向排列不换行
-    ....
+    ...
     
     
 justify-content:
+
     .flex-start   左对齐
     .flex-end 右对齐
     .center  水平居中
@@ -57,6 +63,7 @@ justify-content:
 
 
 align-items:
+
     .flex-start: 居上对齐
     .flex-end: 巨下对齐
     .center: 垂直居中
@@ -65,12 +72,14 @@ align-items:
 
 
 align-content:
+
     .flex-start: 整体居上对齐显示
     .flex-end:整体巨下对齐显示
     .center: 整体垂直居中对齐
     .space-between: 与交纵向轴两端对齐，轴线之间的间隔平均分布。
     .space-around: 每根轴线两侧的间隔都相等。所以，轴线之间的间隔比轴线与边框的间隔大一倍。
     .stretch（默认值）：轴线占满整个交叉轴。
+
 
 
 

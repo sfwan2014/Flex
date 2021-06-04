@@ -1,32 +1,27 @@
 # Flex
 
-Flex 是 Flexible Box 的缩写，意为"弹性布局"，用来为盒状模型提供最大的灵活性。
+#### Flex 是 Flexible Box 的缩写，意为"弹性布局"，用来为盒状模型提供最大的灵活性。
+
+    .box{
+        display: flex; 
+        display: inline-flex; 行内元素也可以使用 Flex 布局。
+    }
+
+
+#### Webkit内核
+
+    .box{
+        display: -webkit-flex;
+        display: flex;
+    }
+
+
+##### 注意，设为 Flex 布局以后，子元素的float、clear和vertical-align属性将失效
 
 
 
-.box{
-    display: flex; 
-    display: inline-flex; 行内元素也可以使用 Flex 布局。
-}
+## 容器属性:
 
-
-
-Webkit内核
-
-
-.box{
-    display: -webkit-flex;
-    display: flex;
-}
-
-
-注意，设为 Flex 布局以后，子元素的float、clear和vertical-align属性将失效
-
-
-
-容器属性:
-
-    
     .flex-direction  排列方式
     .flex-wrap  换行
     .flex-flow    flex-direction与flex-wrap结合
@@ -35,7 +30,7 @@ Webkit内核
     .align-content  多行显示时在纵向轴上的对齐方式(多行显示生效)
     
     
-flex-direction:
+### flex-direction:
 
 
     .row 横向显示多个 从左到右
@@ -44,7 +39,7 @@ flex-direction:
     .column-reverse 反转
     
 
-flex-wrap: 
+### flex-wrap: 
 
 
     .nowrap  不换行(默认)
@@ -52,7 +47,7 @@ flex-wrap:
     .wrap-reverse 换行,第一行在下方
 
 
-flex-flow:
+### flex-flow:
 
     .row nowrap   横向排列不换行(默认)
     .row wrap   横向排列换行
@@ -60,7 +55,7 @@ flex-flow:
     ...
     
     
-justify-content:
+### justify-content:
 
     .flex-start   左对齐
     .flex-end 右对齐
@@ -70,7 +65,7 @@ justify-content:
 
 
 
-align-items:
+### align-items:
 
     .flex-start: 居上对齐
     .flex-end: 巨下对齐
@@ -79,7 +74,7 @@ align-items:
     .stretch: （默认值）：如果项目未设置高度或设为auto，将占满整个容器的高度。
 
 
-align-content:
+### align-content:
 
     .flex-start: 整体居上对齐显示
     .flex-end:整体巨下对齐显示
@@ -92,6 +87,6 @@ align-content:
 
 
 
-项目的属性
+## 项目的属性
 
     

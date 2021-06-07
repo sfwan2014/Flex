@@ -110,6 +110,7 @@
 ##### 如果所有项目的flex-grow属性都为1，则它们将等分剩余空间（如果有的话）。如果一个项目的flex-grow属性为2，其他项目都为1，则前者占据的剩余空间将比其他项多一倍。
 
 
+
 ### flex-shrink
     .item{
         flex-shrink: <number> /* default 1 */
@@ -119,11 +120,13 @@
 ##### 负值对该属性无效。
 
 
+
 ### flex-basis
     .item{
         flex-basis: <length> | auto; /* default auto */
     }
 ##### 它可以设为跟width或height属性一样的值（比如350px），则项目将占据固定空间。
+
 
 
 ### flex
@@ -134,5 +137,9 @@
 ##### 建议优先使用这个属性，而不是单独写三个分离的属性，因为浏览器会推算相关值。
 
 
-### align-self
 
+### align-self
+    item{
+        align-self: auto | flex-start | flex_end | center | baseline | stretch
+    }
+##### 该属性可能取6个值，除了auto，其他都与align-items属性完全一致。
